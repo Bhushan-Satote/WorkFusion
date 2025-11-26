@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Project Manager Assignment</title>
+</head>
+<body>
+    <h1>Test Project Manager Assignment</h1>
+    <button onclick="testAssignment()">Test Assignment</button>
+    <div id="result"></div>
+
+    <script>
+        async function testAssignment() {
+            const resultDiv = document.getElementById('result');
+            
+            try {
+                // Get token from localStorage (you'll need to set this)
+                const token = localStorage.getItem('token');
+                
+                if (!token) {
+                    resultDiv.innerHTML = '<p style="color: red;">No token found. Please login first.</p>';
+                    return;
+                }
+                
+                const response = await fetch('http://localhost:5000/api/projects/assign-manager', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    },
+                    body: JSON.stringify({
+                        projectId: 'TEST_PROJECT_ID', // Replace with actual project ID
+                        projectManagerId: 'TEST_MANAGER_ID' // Replace with actual manager ID
+                    })
+                });
+                
+                const responseText = await response.text();
+                
+                resultDiv.innerHTML = `
+                    <h3>Response:</h3>
+                    <p><strong>Status:</strong> ${response.status}</p>
+                    <p><strong>Response:</strong> ${responseText}</p>
+                `;
+                
+            } catch (error) {
+                resultDiv.innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
