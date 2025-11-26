@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="600" viewBox="0 0 900 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="900" height="600" fill="#f8f9fa"/>
+  
+  <!-- Kanban Board -->
+  <rect x="100" y="100" width="700" height="400" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Columns -->
+  <rect x="120" y="140" width="200" height="340" rx="6" fill="#f1f5f9"/>
+  <rect x="340" y="140" width="200" height="340" rx="6" fill="#f1f5f9"/>
+  <rect x="560" y="140" width="200" height="340" rx="6" fill="#f1f5f9"/>
+  
+  <!-- Column Headers -->
+  <rect x="120" y="140" width="200" height="40" rx="6" fill="#e2e8f0"/>
+  <rect x="340" y="140" width="200" height="40" rx="6" fill="#e2e8f0"/>
+  <rect x="560" y="140" width="200" height="40" rx="6" fill="#e2e8f0"/>
+  
+  <!-- Cards in To Do -->
+  <rect x="130" y="190" width="180" height="80" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="130" y="280" width="180" height="80" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  
+  <!-- Cards in In Progress -->
+  <rect x="350" y="190" width="180" height="80" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="350" y="280" width="180" height="80" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="350" y="370" width="180" height="80" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  
+  <!-- Cards in Done -->
+  <rect x="570" y="190" width="180" height="80" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  
+  <!-- Column Titles -->
+  <text x="190" y="165" font-family="Arial" font-size="14" fill="#475569" text-anchor="middle">To Do</text>
+  <text x="440" y="165" font-family="Arial" font-size="14" fill="#475569" text-anchor="middle">In Progress</text>
+  <text x="660" y="165" font-family="Arial" font-size="14" fill="#475569" text-anchor="middle">Done</text>
+  
+  <!-- Card Details (Lines) -->
+  <g fill="#94a3b8">
+    <!-- To Do Cards -->
+    <rect x="140" y="200" width="120" height="4" rx="2"/>
+    <rect x="140" y="210" width="80" height="4" rx="2"/>
+    <rect x="140" y="290" width="100" height="4" rx="2"/>
+    <rect x="140" y="300" width="90" height="4" rx="2"/>
+    
+    <!-- In Progress Cards -->
+    <rect x="360" y="200" width="110" height="4" rx="2"/>
+    <rect x="360" y="210" width="70" height="4" rx="2"/>
+    <rect x="360" y="290" width="90" height="4" rx="2"/>
+    <rect x="360" y="300" width="100" height="4" rx="2"/>
+    <rect x="360" y="380" width="120" height="4" rx="2"/>
+    <rect x="360" y="390" width="80" height="4" rx="2"/>
+    
+    <!-- Done Cards -->
+    <rect x="580" y="200" width="100" height="4" rx="2"/>
+    <rect x="580" y="210" width="90" height="4" rx="2"/>
+  </g>
+  
+  <!-- Progress Indicators -->
+  <circle cx="290" y="250" r="8" fill="#22c55e"/>
+  <circle cx="510" y="250" r="8" fill="#eab308"/>
+  <circle cx="510" y="340" r="8" fill="#eab308"/>
+  <circle cx="510" y="430" r="8" fill="#eab308"/>
+  <circle cx="730" y="250" r="8" fill="#22c55e"/>
+</svg> 

@@ -1,0 +1,13 @@
+<svg width="900" height="600" viewBox="0 0 900 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="600" fill="#f8f9fa"/>
+  <path d="M450 150 L650 250 L450 350 L250 250 Z" fill="#e9ecef" stroke="#dee2e6" stroke-width="2"/>
+  <path d="M450 350 L650 250 L650 450 L450 550 Z" fill="#e9ecef" stroke="#dee2e6" stroke-width="2"/>
+  <path d="M250 250 L450 350 L450 550 L250 450 Z" fill="#e9ecef" stroke="#dee2e6" stroke-width="2"/>
+  <circle cx="450" cy="250" r="40" fill="#4c6ef5"/>
+  <circle cx="350" cy="350" r="30" fill="#4c6ef5" opacity="0.8"/>
+  <circle cx="550" cy="350" r="30" fill="#4c6ef5" opacity="0.8"/>
+  <circle cx="450" cy="450" r="30" fill="#4c6ef5" opacity="0.8"/>
+  <line x1="450" y1="290" x2="450" y2="420" stroke="#4c6ef5" stroke-width="2"/>
+  <line x1="450" y1="290" x2="350" y2="350" stroke="#4c6ef5" stroke-width="2"/>
+  <line x1="450" y1="290" x2="550" y2="350" stroke="#4c6ef5" stroke-width="2"/>
+</svg> 
